@@ -1,0 +1,10 @@
+node_modules
+/build
+coverage
+dist
+dist-ssr
+*.local
+.env
+.DS_Store
+ToDo.md
+readme2.md

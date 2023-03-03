@@ -1,0 +1,66 @@
+{
+  "Quadra": "Quadra",
+
+  "Institutional-grade grad-text": "Institutional-grade",
+  "trading software for ": "trading software for ",
+  "everyone": "everyone",
+
+  "Join the Quadra Waitlist:": "Join the Quadra Waitlist:",
+  "Your Email": "Your Email",
+
+  "tagline": "Master the Crypto Markets with Quadra: Multi-Asset Multi-Exchange Portfolio Management & Execution",
+
+  "Risk Management": "Risk Management", 
+  "Risk Management Detail": "Track your investment's performance in real-time. We provide start of day, intra-day and live risk profit and loss attribution. Easily visualise your complete exposure to the market across different venues, combining all your spot holdings and derivatives positions in one place.",
+  "Portfolio Management": "Portfolio Management", 
+  "Portfolio Management Detail": "Aggregated positions, balances and a cross-platform trade blotter at the click of a button. Collateral and margin health tracking with an integrated notifications system. Fetch your historical trading records easily and efficiently.",
+  "Advanced Algorithmic Order Execution": "Advanced Algorithmic Order Execution", 
+  "Advanced Algorithmic Order Execution Detail": "Multi-leg asset execution through our in-house built proprietary algos, with low execution costs and minimal slippage. Extremely useful for arbitrage strategies and futures basis trading / rolls.",
+  "Spot, Derivatives & Synthetic Assets": "Spot, Derivatives & Synthetic Assets", 
+  "Spot, Derivatives & Synthetic Assets Detail": "Everything on exchange and more. Track crypto markets and build your own derivatives, including future spreads and perpetual crosses. Customise your trading interface how you like it!",
+
+
+
+
+  "Contact Landing Title": "Ready to take your crypto trading to the next level?",
+  "Contact Landing Text part 1": "Join ",
+  "Contact Landing Text part 2": "waiting list today to experience the ultimate solution for investors. With advanced algorithmic order execution, centralized risk management, and a complete portfolio management system, you'll have everything you need to succeed. Register your interest now and be the first to be notified when Quadra is available!",
+  
+  "Contact Page Title": "Ready to take your crypto trading to the next level?",
+  "Contact Page part 1": "Quadra is the ultimate solution for investors; with advanced algorithmic order execution, centralized risk management, and a complete portfolio management system, you'll have everything you need to succeed. If that sounds like just the kind of thing you've been looking for, let's talk! You'll be able to grab some time on our calendar that's convenient for you. Email us at",
+  "email": "contact@quadra.co.uk",
+  "Contact Page part 2": "Quadra is the ultimate solution for investors; with advanced algorithmic order execution, centralized risk management, and a complete portfolio management system, you'll have everything you need to succeed. If that sounds like just the kind of thing you've been looking for, let's talk! You'll be able to grab some time on our calendar that's convenient for you. Email us at",
+  "or message us directly": "or message us directly by filling out this form:",
+
+  "CEO": "CEO",
+  "CMO & CSO": "CMO & CSO",
+  "Quant Engineer": "Quant Engineer",
+  "CTO": "CTO",
+  "AI & ML Engineer": "AI & ML Engineer",
+
+  "Thiago Bio": "Thiago has extensive experience developing and implementing banking products, digital channels, wallets and payment solutions for both the retail and B2B sectors. Thiago also holds a bachelor's degree in computer science & AI as well as an MBA in Economics and Finance.",
+  "Pedro Bio": "Pedro has over 15-year experience in Global Markets working for large investment Banks. Pedro holds an MBA in Management and Finance from New York University. Pedro is incredibly passionate about Trading, Distributed Ledger innovation, Cryptocurrencies & DeFi.",
+  "Marcello Bio": "Marcello has 12-year experience leading teams & implementing digital transformation for some of the largest banks in South America. Marcello holds a BA in Computer Science and an MBA in Finance from FGV and post degree in Management from FIAP. ",
+  "Ambrose Bio": "Ambrose is the Co-Founder of Quadra. Ambrose is a self-taught coding wizard. He sees coding as a form of art which is sublimely expressed through logic, math and ingenuity. Ambrose graduated in Mathematics from the University of Warwick and is an experienced programmer. In his most recent role, Ambrose oversaw the Global Electronic FX Swaps market-making book for NatWest Markets Plc, which was responsible for managing more than 80% of the entire G10 franchise. Ambrose is also the co-founder of Scrypt Solutions, a firm that focuses on delta and market neutral algorithmic trading strategies.",
+  "Shav Bio": "Shav is our AWS Certified Machine Learning specialist, as well as the teams full-stack developer. Specialised in deep learning, he is an experienced coder who possesses critical skills for implementing Quadra's AI, Software & cloud initiatives. His hands-on experience validates his expertise in developing, architecting, training, tuning, and deploying machine learning (ML) workloads in the cloud. Shav also holds a master's degree with First Class Honours in Chemical Engineering (MEng) from Imperial College London.",
+
+  
+  "your_name": "Your name",
+  "your_email": "Your email",
+  "your_message": "Your message",
+  "check_here": "Check here to subscribe to quarterly updates",
+  "email_sent": "Email Sent Successfully",
+  "send_message": "Send Message",
+  
+  "Language": "Language",
+  "Team": "Team",
+  "Contact Us": "Contact Us",
+  "English": "English",
+  "Portugues": "Portuguese",
+
+  "Change Language to English": "Change Language to English",
+  "Change Language to Portugues": "Change Language to Portuguese",
+
+  "waitlist joined": "Waitlist Joined Successfully"
+}
+

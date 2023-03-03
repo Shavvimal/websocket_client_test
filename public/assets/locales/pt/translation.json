@@ -1,0 +1,62 @@
+{
+  "Quadra": "Quadra",
+
+  "Institutional-grade grad-text": "Institutional-grade",
+  "trading software for ": "trading software for ",
+  "everyone": "everyone",
+
+  "Join the Quadra Waitlist:": "Inscreva-se para a Waitlist:",
+  "Your Email": "Seu E-mail",
+
+  "tagline": "Domine o mercado Cripto com Quadra: Multi-Asset Multi-Exchange Portfolio Management & Execution",
+
+  "Risk Management": "Gerenciamento de risco", 
+  "Risk Management Detail": "Gerencie a performance de seus investimentos em tempo real. Posições centralizadas de início de dia, intra-day e acompanhamento de profit & loss. Visualize de forma fácil sua completa exposição ao mercado em diferentes ativos, combinando suas posições spot e derivativos em um único lugar.",
+  "Portfolio Management": "Gerenciamento de Portfolio", 
+  "Portfolio Management Detail": "Posições agregadas, saldos e um trade blotter cross plataforma à um clique. Acompanhamento em tempo real de Colateral e margem combinado a um robusto sistema de notificações para que você fique conectado 24/7. Seu histórico de trades compilado de forma inteligente e pronto para sua análise.",
+  "Advanced Algorithmic Order Execution": "Advanced Algorithmic Order Execution", 
+  "Advanced Algorithmic Order Execution Detail": "Execute ordens multi-leg através de nossos algorítmos proprietários, reduzindo seu custo de execução e slippage mínimo, trazendo mais lucratividade para suas estratégias de arbitragem e futures basis trading / rolls.",
+  "Spot, Derivatives & Synthetic Assets": "Spot, Derivatives & Synthetic Assets", 
+  "Spot, Derivatives & Synthetic Assets Detail": "Todos os produtos e muito mais! Gerencie os mercados cripto e construa seus próprios derivativos, como futures spreads e perpetual crosses! Customize sua estratégia de trading da sua maneira.",
+
+  "Contact Landing Title": "Você está pronto para levar seu trade de criptoativos para o próximo nível?",
+  "Contact Landing Text part 1": "Venha para  ",
+  "Contact Landing Text part 2": "hoje e tenha toda a esperiência de uma solução única para investidores, com um avançado algorítmo de execução, gerenciamento de riscos centralizados, e uma visão completa de seu portfólio. Você terá tudo que precisa reumido em uma única plataforma. Registre-se agora e seja o primeiro a ser notificado assim que Quadra estiver disponível!",
+  
+  "Contact Page Title": "Você está pronto para levar seu trade de criptoativos para o próximo nível?",
+  "Contact Page part 1": "Quadra é um sistêma único para investidores; com um avançado algorítmo de execução, gerenciamento de riscos centralizado e uma solução completa para visualizar seu portfólio. Se isso soa como algo que você sempre buscou no mercado, vamos conversar! Escolha um horário em nosso calendário e nos envie um e-mail em",
+  "email": "comercial@quadra.trade",
+  "Contact Page part 2": "Quadra é um sistêma único para investidores; com um avançado algorítmo de execução, gerenciamento de riscos centralizado e uma solução completa para visualizar seu portfólio. Se isso soa como algo que você sempre buscou no mercado, vamos conversar! Escolha um horário em nosso calendário e nos envie um e-mail em",
+  "or message us directly": "ou nos envie uma mensagem preenchendo o formulário abaixo:",
+
+  "CEO": "CEO",
+  "CMO & CSO": "CMO & CSO",
+  "Quant Engineer": "Quant Engineer",
+  "CTO": "CTO",
+  "AI & ML Engineer": "AI & ML Engineer",
+
+  "Thiago Bio": "Thiago passou a maior parte de sua carreira liderando e criando novos negócios. Antes de fundar Quadra, Thiago foi Head of New Business Development, Head of Digital e Head of Banking Solutions nos três maiores bancos de investimento da América Latina, respectivamente. Foi também Head of Banking and Merchant Acquirer da Raizen, líder de mercado no setor de energia. Sua experiência está na liderança de equipes focadas em produtos bancários, canais digitais, carteiras e soluções de pagamento para os setores de varejo e B2B. Thiago também é formado em ciência da computação e IA e possui MBA em Economia e Finanças.",
+  "Pedro Bio": "Pedro tem mais de 14 anos de experiência em trading, tendo passado a maior parte desse tempo gerenciando FX swaps and Short-Term Interest Rate books nos EUA e no Reino Unido, Mais recentemente Pedro foi responsável pelos principais swaps GBP Cross-Currency e FX para a NatWest Markets Plc. Pedro é incrivelmente apaixonado por Trading, Decentralized Ledger innovation, Cryptocurrencies & DeFi. Ele é bacharel em negócios e possui MBA em Gestão e Finanças pela New York University.",
+  "Marcello Bio": "Marcello é um cientista da computação com vasta experiência na implementação da transformação digital em organizações complexas. Marcello passou a maior parte de sua carreira trabalhando para grandes bancos em São Paulo - Brasil. Em sua última função, liderou a equipe responsável pela transformação digital do Banco Safra, Marcello é formado em Ciência da Computação e possui MBA em Finanças pela FGV e pós-graduação em Gestão de projetos pela FIAP.",
+  "Ambrose Bio": "Ambrose é um mago autodidata de codificação. Ele vê a codificação como uma forma de arte que é sublimemente expressa através da lógica, matemática e engenhosidade. Ambrose se formou em Matemática pela Universidade de Warwick e é um programador experiente. Em sua função mais recente, Ambrose supervisionou o livro de criação de mercado Global Electronic FX Swaps para a NatWest Markets Plc, o qual foi responsável por gerenciar mais de 80% de toda a franquia G10.",
+  "Shav Bio": "Shav é nosso AWS Certified Machine Learning Specialist, assim como um desenvolvedor full-stack. Especializado em deep learning, Shav é um coder com muita experiência e possui habilidades criticas para a implementação de AI e iniciativas cloud para a plataforma Quadra. Sua experiência hands-on valida sua experiência nas áreas de programação, arquitetura, tuning e machine learning. Shav é mestre em Engenharia Química com Fisrt Class Honours pelo Imperial College London.",
+
+  
+  "your_name": "Seu nome",
+  "your_email": "Seu e-mail",
+  "your_message": "Sua mensagem",
+  "check_here": "Gostaria de receber nossos comunidados trimestrais?",
+  "email_sent": "E-mail enviado com sucesso",
+  "send_message": "Enviar",
+  
+  "Language": "Língua",
+  "Team": "Time",
+  "Contact Us": "Contato",
+
+  "English": "Inglês",
+  "Portugues": "Português",
+
+  "Change Language to English": "Alterar idioma para inglês",
+  "Change Language to Portugues": "Alterar idioma para português",
+  "waitlist joined": "Você registrou-se com sucesso"
+}
