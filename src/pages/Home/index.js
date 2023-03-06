@@ -5,7 +5,7 @@ import io from "socket.io-client";
 const test = process.env.TEST;
 const endpoint =
   test == "true" ? "http://localhost:3000" : "https://socket.quadra.trade";
-const socket = io(endpoint);
+const socket = io(endpoint, { transports: ["websocket"] });
 
 function SignUp() {
   const [room, setRoom] = useState("");
@@ -25,8 +25,10 @@ function SignUp() {
       setIsConnected(false);
     });
     return () => {
+      //  the listeners must be removed in the cleanup step, in order to prevent multiple event registrations
       socket.off("connect");
       socket.off("disconnect");
+      socket.off("tickers");
     };
   }, []);
 
