@@ -1,40 +1,40 @@
 import React, { useState, useEffect } from "react";
-import { ParticlesComponent, Form } from "../../components";
-import socketIOClient from "socket.io-client";
+import { ParticlesComponent } from "../../components";
+import io from "socket.io-client";
+
+const test = process.env.TEST;
+const endpoint =
+  test == "true" ? "http://localhost:3000" : "https://socket.quadra.trade";
+const socket = io(endpoint);
 
 function SignUp() {
   const [room, setRoom] = useState("");
   const [message, setMessage] = useState("No Message Received Yet");
   const [clientID, setClientID] = useState("No ClientID Yet");
-  const [socket, setSocket] = useState(null);
-  const [isChecked, setIsChecked] = useState(false);
-
-  const endpoint = !isChecked
-    ? "http://localhost:3000"
-    : "https://socket.quadra.trade";
+  const [isConnected, setIsConnected] = useState(socket.connected);
 
   useEffect(() => {
-    const socket = socketIOClient(endpoint);
     socket.on("connect", () => {
       setClientID(socket.id);
+      setIsConnected(true);
     });
     socket.on("tickers", (message) => {
       setMessage(JSON.stringify(message));
     });
-    setSocket(socket);
-  }, [endpoint]);
+    socket.on("disconnect", () => {
+      setIsConnected(false);
+    });
+    return () => {
+      socket.off("connect");
+      socket.off("disconnect");
+    };
+  }, []);
 
-  useEffect(() => {
-    socket ? socket.emit("join-channel", room) : null;
-  }, [room]);
-
-  const keyPress = (e) => {
+  const sendRoomSubscription = (e) => {
     if (e.keyCode == 13) {
       setRoom(e.target.value);
+      socket.emit("join-channel", e.target.value);
     }
-  };
-  const handleOnChange = () => {
-    setIsChecked(!isChecked);
   };
 
   return (
@@ -54,24 +54,10 @@ function SignUp() {
                   <h3 className="h3 text-3xl text-white mb-2 text-center">
                     Client WebSocket Testing Module
                   </h3>
-                  <div className="flex items-center justify-center">
-                    <input
-                      type="checkbox"
-                      id="production"
-                      name="production"
-                      className="form-check-input float-left cursor-pointer mr-2 w-4 h-4 text-orange-500 bg-gray-100 rounded border-gray-300 focus:ring-orange-500 focus:ring-0 transition duration-200 focus:ring-offset-0"
-                      checked={isChecked}
-                      onChange={handleOnChange}
-                    ></input>
-                    <label
-                      className="form-check-label inline-block text-white pt-0.5"
-                      htmlFor="production"
-                    >
-                      Production
-                    </label>
-                  </div>
                   <p className="text-gray-300 text-lg mb-6 text-center">
                     Current Endpoint: {endpoint}
+                    <br />
+                    Connected: {"" + isConnected}
                     <br />
                     Current ClientID: {clientID}
                     <br />
@@ -85,7 +71,7 @@ function SignUp() {
                   name="name"
                   className="peer block w-full appearance-none border-0 border-b border-orange-900 bg-transparent py-2.5 px-0 text-sm text-white focus:border-orange-100 focus:outline-none focus:ring-0 text-center"
                   placeholder=" "
-                  onKeyDown={keyPress}
+                  onKeyDown={sendRoomSubscription}
                 />
               </div>
               <p className="text-gray-300 text-lg mb-6 text-center my-6">
