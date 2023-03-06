@@ -3,14 +3,15 @@ import { ParticlesComponent, Form } from "../../components";
 import socketIOClient from "socket.io-client";
 
 function SignUp() {
-  const production = true;
-  const endpoint = production
-    ? "https://socket.quadra.trade"
-    : "http://localhost:4000";
   const [room, setRoom] = useState("");
   const [message, setMessage] = useState("No Message Received Yet");
   const [clientID, setClientID] = useState("No ClientID Yet");
   const [socket, setSocket] = useState(null);
+  const [isChecked, setIsChecked] = useState(false);
+
+  const endpoint = !isChecked
+    ? "http://localhost:3000"
+    : "https://socket.quadra.trade";
 
   useEffect(() => {
     const socket = socketIOClient(endpoint);
@@ -21,7 +22,7 @@ function SignUp() {
       setMessage(JSON.stringify(message));
     });
     setSocket(socket);
-  }, []);
+  }, [endpoint]);
 
   useEffect(() => {
     socket ? socket.emit("join-channel", room) : null;
@@ -31,6 +32,9 @@ function SignUp() {
     if (e.keyCode == 13) {
       setRoom(e.target.value);
     }
+  };
+  const handleOnChange = () => {
+    setIsChecked(!isChecked);
   };
 
   return (
@@ -50,6 +54,22 @@ function SignUp() {
                   <h3 className="h3 text-3xl text-white mb-2 text-center">
                     Client WebSocket Testing Module
                   </h3>
+                  <div className="flex items-center justify-center">
+                    <input
+                      type="checkbox"
+                      id="production"
+                      name="production"
+                      className="form-check-input float-left cursor-pointer mr-2 w-4 h-4 text-orange-500 bg-gray-100 rounded border-gray-300 focus:ring-orange-500 focus:ring-0 transition duration-200 focus:ring-offset-0"
+                      checked={isChecked}
+                      onChange={handleOnChange}
+                    ></input>
+                    <label
+                      className="form-check-label inline-block text-white pt-0.5"
+                      htmlFor="production"
+                    >
+                      Production
+                    </label>
+                  </div>
                   <p className="text-gray-300 text-lg mb-6 text-center">
                     Current Endpoint: {endpoint}
                     <br />
