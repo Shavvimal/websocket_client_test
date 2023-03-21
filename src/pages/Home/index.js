@@ -2,14 +2,25 @@ import React, { useState, useEffect } from "react";
 import { ParticlesComponent } from "../../components";
 import io from "socket.io-client";
 
-const test = process.env.TEST;
-const endpoint =
-  test == "true" ? "http://localhost:3000" : "https://socket.quadra.trade";
-const socket = io(endpoint, { transports: ["websocket"] });
+// Access JWT token from local storage
+const token = localStorage.getItem("token");
+console.log(token);
+
+const endpoint = "https://socket.quadra.trade";
+//  send payload on connect
+const socket = io(endpoint, {
+  transports: ["websocket"],
+  auth: {
+    traderID: "a38qwe",
+    quadraID: "1234",
+    token: token,
+  },
+});
 
 function SignUp() {
   const [room, setRoom] = useState("");
   const [message, setMessage] = useState("No Message Received Yet");
+  const [error, setError] = useState("No Errors");
   const [clientID, setClientID] = useState("No ClientID Yet");
   const [isConnected, setIsConnected] = useState(socket.connected);
 
@@ -24,11 +35,15 @@ function SignUp() {
     socket.on("disconnect", () => {
       setIsConnected(false);
     });
+    socket.on("err", (err) => {
+      setError(err);
+    });
     return () => {
       //  the listeners must be removed in the cleanup step, in order to prevent multiple event registrations
       socket.off("connect");
       socket.off("disconnect");
       socket.off("tickers");
+      socket.off("err");
     };
   }, []);
 
@@ -81,6 +96,12 @@ function SignUp() {
               </p>
               <div className="relative bg-black  border border-orange-900 border-2 rounded-md rounded-md w-full text-center">
                 {message}
+              </div>
+              <p className="text-gray-300 text-lg mb-6 text-center my-6">
+                Error:
+              </p>
+              <div className="relative bg-black  border border-orange-900 border-2 rounded-md rounded-md w-full text-center">
+                {error}
               </div>
             </div>
           </section>

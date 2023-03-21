@@ -23,7 +23,7 @@ Deployed [here](https://nduk-quadra.netlify.app/)
 - [Deloitte Blockchain](https://www2.deloitte.com/uk/en/pages/innovation/solutions/deloitte-blockchain-practice.html)
 - [EY: Blockchain consulting services](https://www.ey.com/en_uk/consulting/blockchain-consulting-services)
 - [Accenture: Blockchain](https://www.accenture.com/gb-en/services/blockchain-index)
-- [Crypto Consultant](https://crypto-consultant.ioa/)
+- [Crypto Consultant](https://crypto-consultant.io/)
 - [Framer](https://www.framer.com/)
 
 # ToDo
