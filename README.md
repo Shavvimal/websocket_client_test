@@ -23,7 +23,7 @@ Deployed [here](https://nduk-quadra.netlify.app/)
 - [Deloitte Blockchain](https://www2.deloitte.com/uk/en/pages/innovation/solutions/deloitte-blockchain-practice.html)
 - [EY: Blockchain consulting services](https://www.ey.com/en_uk/consulting/blockchain-consulting-services)
 - [Accenture: Blockchain](https://www.accenture.com/gb-en/services/blockchain-index)
-- [Crypto Consultant](https://crypto-consultant.io/)
+- [Crypto Consultant](https://crypto-consultant.ioa/)
 - [Framer](https://www.framer.com/)
 
 # ToDo
@@ -58,6 +58,7 @@ Deployed [here](https://nduk-quadra.netlify.app/)
 - [Stack Overflow: Reduce latency between kafka's producer and consumer](https://stackoverflow.com/questions/64767154/how-to-reduce-latency-between-kafkas-producer-and-consumer)
 
 # Issues with Distribution
+
 - [How to stream Kafka messages to Internet-facing clients over WebSockets](https://ably.com/topic/websockets-kafka)
 
 # Stacks
@@ -76,6 +77,7 @@ Issue is that it’s not scalable to have a 1:1 mapping between consuemrs and Ka
 - Size of replication - 3?
 - Best method of Semantic Partitioning
 - Scaling out Consumers - Websockets Server? Use Consumer Grouping?
+
 # Real Time Database Instead?
 
 - Options include: OpenTSDB, Apache Druid, InfluxDB
@@ -89,5 +91,6 @@ Issue is that it’s not scalable to have a 1:1 mapping between consuemrs and Ka
 - FIX
 
 # An introduction to kdb+
-- q programming language. 
-- 
+
+- q programming language.
+-
