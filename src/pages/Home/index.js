@@ -11,8 +11,8 @@ const endpoint = "https://socket.quadra.trade";
 const socket = io(endpoint, {
   transports: ["websocket"],
   auth: {
-    traderID: "a38qwe",
-    quadraID: "1234",
+    traderID: "0",
+    quadraID: "0",
     token: token,
   },
 });
