@@ -94,7 +94,7 @@ function SignUp() {
               <p className="text-gray-300 text-lg mb-6 text-center my-6">
                 Message:
               </p>
-              <div className="relative bg-black  border border-orange-900 border-2 rounded-md rounded-md w-full text-center">
+              <div className="relative bg-black  border border-orange-900 border-2 rounded-md rounded-md w-full text-center max-h-1/2 max-w-3xl overflow-scroll">
                 {message}
               </div>
               <p className="text-gray-300 text-lg mb-6 text-center my-6">
