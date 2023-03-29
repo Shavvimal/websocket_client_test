@@ -6,7 +6,7 @@ import io from "socket.io-client";
 const token = localStorage.getItem("token");
 console.log(token);
 
-const endpoint = "https://socket.quadra.trade";
+const endpoint = "https://socket-dev.quadra.trade";
 //  send payload on connect
 const socket = io(endpoint, {
   transports: ["websocket"],
