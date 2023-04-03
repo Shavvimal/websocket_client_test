@@ -29,7 +29,7 @@ function SignUp() {
       setClientID(socket.id);
       setIsConnected(true);
     });
-    socket.on("tickers", (message) => {
+    socket.on("data", (message) => {
       setMessage(JSON.stringify(message));
     });
     socket.on("disconnect", () => {
@@ -42,7 +42,7 @@ function SignUp() {
       //  the listeners must be removed in the cleanup step, in order to prevent multiple event registrations
       socket.off("connect");
       socket.off("disconnect");
-      socket.off("tickers");
+      socket.off("data");
       socket.off("err");
     };
   }, []);
